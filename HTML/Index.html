@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+<form>
+    <div>Имя:<input type="text"></div>
+    <div>Фамилия:<input type="text"></div>
+    <div>Отчество:<input type="text"></div>
+    <div>Телефон:<input type="text" placeholder="+71234567890"></div>
+    <div>
+        Из каких источников узнали о нас:
+        <div><input type="checkbox" value="1">Наружняя реклама</div>
+        <div><input type="checkbox" value="2">В интернете</div>
+        <div><input type="checkbox" value="3">В социальной сети</div>
+    </div>
+    <div>
+        Какая из платформ вам нравится больше:
+        <p><input type="radio" name="platform" value="1">Персональный компьютер</p>
+        <p><input type="radio" name="platform" value="2">Ноутбук</p>
+        <p><input type="radio" name="platform" value="3">Игровая приставка</p>
+        <p><input type="radio" name="platform" value="4">Облачный гейминг</p>
+    </div>
+    <div>
+        Выберете удобные способы оплаты из списка:
+        <select multiple>
+            <option>Банковская карта</option>
+            <option>Система быстрых платежей</option>
+            <option>Криптовалюта</option>
+            <option>Наличными при получении товара</option>
+        </select>
+    </div>
+    <div>
+        Выберете способ двухфакторной аутентификации:
+        <select>
+            <option>SMS на номер телефона</option>
+            <option>PUSH уведомление на телефон</option>
+            <option>Письмо на электронную почту</option>
+        </select>
+    </div>
+    <div>Пароль:<input type="password"></div>
+    <button type="submit">Зарегистрироваться</button>
+    <div><textarea placeholder="Оставить комментарий"></textarea></div>
+    <button type="submit">Отправить комментарий</button>
+</form>
+<a href="about.html">О нас</a>
+</body>
+</html>

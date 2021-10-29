@@ -12,16 +12,37 @@
     <div>Телефон:<input type="text" placeholder="+71234567890"></div>
     <div>
         Из каких источников узнали о нас:
-        <div><input type="checkbox" value="1">Наружняя реклама</div>
-        <div><input type="checkbox" value="2">В интернете</div>
-        <div><input type="checkbox" value="3">В социальной сети</div>
+        <div>
+            <label for="streetBanner">Наружняя реклама</label>
+            <input type="checkbox" id="streetBanner" value="1">
+        </div>
+        <div>
+            <label for="internet">В интернете</label>
+            <input type="checkbox" id="internet" value="2">
+        </div>
+        <div>
+            <label for="socialNet">В социальной сети</label>
+            <input type="checkbox" id="socialNet" value="3">
+        </div>
     </div>
     <div>
         Какая из платформ вам нравится больше:
-        <p><input type="radio" name="platform" value="1">Персональный компьютер</p>
-        <p><input type="radio" name="platform" value="2">Ноутбук</p>
-        <p><input type="radio" name="platform" value="3">Игровая приставка</p>
-        <p><input type="radio" name="platform" value="4">Облачный гейминг</p>
+        <p>
+            <label for="pc">Персональный компьютер</label>
+            <input type="radio" id="pc" name="platform" value="1">
+        </p>
+        <p>
+            <label for="notebook">Ноутбук</label>
+            <input type="radio" id="notebook" name="platform" value="2">
+        </p>
+        <p>
+            <label for="console">Игровая приставка</label>
+            <input type="radio" id="console" name="platform" value="3">
+        </p>
+        <p>
+            <label for="cloud">Облачный гейминг</label>
+            <input type="radio" id="cloud" name="platform" value="4">
+        </p>
     </div>
     <div>
         Выберете удобные способы оплаты из списка:

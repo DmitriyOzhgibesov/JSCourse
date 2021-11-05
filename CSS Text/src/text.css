@@ -1,0 +1,46 @@
+body {
+    font-size: 16px;
+    font-family: "Helvetica Neue", sans-serif;
+    color: dimgrey;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: unset;
+    font-size: 30px;
+    margin-bottom: 0.3em;
+}
+
+p {
+    margin: 0.5em 0;
+    text-indent: 1em;
+    text-align: justify;
+}
+
+.form-size {
+    background-color: rgb(254, 238, 215);
+    margin: 11px;
+    max-width: 740px;
+    max-height: 440px;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.course-header {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.text-blue {
+    color: rgb(61, 142, 173);
+    font-weight: bold;
+    display: inline;
+    font-size: 18px;
+}
+
+.course-description {
+    font-family: "Helvetica", sans-serif;
+    line-height: 1.5em;
+}

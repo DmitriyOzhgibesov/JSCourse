@@ -1,0 +1,26 @@
+.employee {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    font-family: "Seravek", sans-serif;
+    max-width: 750px;
+    font-size: 18px;
+}
+
+.employee th {
+    border: 1px solid lightgray;
+    background-color: rgb(52, 152, 219);
+    color: white;
+    text-align: left;
+}
+
+.employee th, .employee td {
+    border: 1px solid lightgray;
+    padding: 15px 60px 15px 10px;
+    box-sizing: border-box;
+    height: 45px;
+    vertical-align: middle;
+}
+
+.employee tr:nth-child(2n + 1) {
+    background-color: rgb(238, 238, 238);
+}

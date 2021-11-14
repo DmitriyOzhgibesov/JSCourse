@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 12px;
+    color: rgb(103, 107, 124);;
+    max-width: 750px;
+}
+
+form {
+    padding: 15px;
+    background-color: rgb(254, 238, 215);;
+    font-size: 14px;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+h1 {
+    margin-left: 0.7em;
+    margin-bottom: 0.2em;
+
+    font-size: 25px;
+    font-weight: unset;
+    font-family: "Helvetica Neue", sans-serif;
+    color: grey;
+}
+
+input, textarea {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 1.2em;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    padding-left: 12px;
+    border: none;
+    height: 35px;
+
+    background: white;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+}
+
+textarea {
+    padding-top: 8px;
+    height: 115px;
+    font-family: "Arial", sans-serif;
+    resize: vertical;
+}
+
+footer {
+    color: grey;
+}
+
+label {
+    font-weight: bold;
+    color: rgb(103, 101, 102);
+}
+
+.submit-button {
+    width: 150px;
+    height: 32px;
+    margin: 1em 0 0 auto;
+    border: none;
+
+    background-color: rgb(61, 142, 173);;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: lightslategrey;
+}
+
+.input-field {
+    width: 100%;
+}

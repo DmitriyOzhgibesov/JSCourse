@@ -1,27 +1,27 @@
 body {
     font-size: 16px;
     font-family: "Helvetica Neue", sans-serif;
-    color: dimgrey;
+    color: #696969;
 }
 
-h1 {
+.form {
+    background-color: rgb(254, 238, 215);
+    margin: 11px;
+    max-width: 740px;
+    padding: 7px 10px 0 9px;
+}
+
+.form h1 {
     text-transform: uppercase;
     font-weight: unset;
     font-size: 30px;
     margin-bottom: 0.3em;
 }
 
-p {
+.form p {
     margin: 0.5em 0;
     text-indent: 1em;
     text-align: justify;
-}
-
-.form-size {
-    background-color: rgb(254, 238, 215);
-    margin: 11px;
-    max-width: 740px;
-    max-height: 440px;
 }
 
 .old-price {
@@ -29,8 +29,12 @@ p {
 }
 
 .course-header {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.course-content {
+    margin-top: 16px;
 }
 
 .text-blue {

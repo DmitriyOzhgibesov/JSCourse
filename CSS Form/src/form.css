@@ -3,37 +3,36 @@
 }
 
 body {
-    margin: 12px;
     color: rgb(103, 107, 124);;
     max-width: 750px;
 }
 
-form {
-    padding: 15px;
-    background-color: rgb(254, 238, 215);;
+.request-form {
+    padding: 18px 18px 1px 18px;
+    background-color: rgb(254, 238, 215);
     font-size: 14px;
     font-family: "Helvetica Neue", sans-serif;
 }
 
-h1 {
+.request-header {
     margin-left: 0.7em;
     margin-bottom: 0.2em;
-
+    margin-top: 1em;
     font-size: 25px;
     font-weight: unset;
     font-family: "Helvetica Neue", sans-serif;
     color: grey;
 }
 
-input, textarea {
+.request-form input, .request-form textarea {
     display: block;
     margin-top: 0.5em;
     margin-bottom: 1.2em;
 }
 
-input[type="text"],
-input[type="tel"],
-textarea {
+.request-form input[type="text"],
+.request-form input[type="tel"],
+.request-form textarea {
     padding-left: 12px;
     border: none;
     height: 35px;
@@ -43,30 +42,29 @@ textarea {
     font-size: 14px;
 }
 
-textarea {
+.request-form textarea {
     padding-top: 8px;
     height: 115px;
     font-family: "Arial", sans-serif;
     resize: vertical;
 }
 
-footer {
-    color: grey;
+.request-form footer {
+    color: #808080;
 }
 
-label {
+.request-form label {
     font-weight: bold;
     color: rgb(103, 101, 102);
 }
 
 .submit-button {
-    width: 150px;
-    height: 32px;
+    padding: 10px 12px;
     margin: 1em 0 0 auto;
     border: none;
 
-    background-color: rgb(61, 142, 173);;
-    color: white;
+    background-color: rgb(61, 142, 173);
+    color: #FFFFFF;
 
     font-size: 14px;
     font-weight: bold;
@@ -74,7 +72,7 @@ label {
 }
 
 .submit-button:hover {
-    background-color: lightslategrey;
+    background-color: #778899;
 }
 
 .input-field {

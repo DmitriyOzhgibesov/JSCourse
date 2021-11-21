@@ -1,26 +1,41 @@
-.employee {
+.employees-table {
     border: 1px solid lightgray;
     border-collapse: collapse;
     font-family: "Seravek", sans-serif;
-    max-width: 750px;
+    width: 750px;
     font-size: 18px;
-}
-
-.employee th {
-    border: 1px solid lightgray;
-    background-color: rgb(52, 152, 219);
-    color: white;
     text-align: left;
 }
 
-.employee th, .employee td {
+.employees-table th {
     border: 1px solid lightgray;
-    padding: 15px 60px 15px 10px;
+    background-color: rgb(52, 152, 219);
+    color: #FFFFFF;
+}
+
+.employees-table th, .employees-table td {
+    border: 1px solid lightgray;
+    padding: 14px 10px 12px 10px;
     box-sizing: border-box;
-    height: 45px;
     vertical-align: middle;
 }
 
-.employee tr:nth-child(2n + 1) {
+.employees-table tr:nth-child(odd) {
     background-color: rgb(238, 238, 238);
+}
+
+.col-1 {
+    width: 150px;
+}
+
+.col-2 {
+    width: 152px;
+}
+
+.col-3 {
+    width: 270px;
+}
+
+.col-4 {
+    width: 175px;
 }

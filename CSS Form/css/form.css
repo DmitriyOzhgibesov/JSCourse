@@ -3,25 +3,23 @@
 }
 
 body {
-    color: rgb(103, 107, 124);;
+    color: #676b7c;
     max-width: 750px;
 }
 
 .request-form {
     padding: 18px 18px 1px 18px;
-    background-color: rgb(254, 238, 215);
+    background-color: #feeed7;
     font-size: 14px;
     font-family: "Helvetica Neue", sans-serif;
 }
 
 .request-header {
-    margin-left: 0.7em;
-    margin-bottom: 0.2em;
-    margin-top: 1em;
-    font-size: 25px;
+    margin: 1em 0.7em 0.2em 0.7em;
+    font-size: 28px;
     font-weight: unset;
     font-family: "Helvetica Neue", sans-serif;
-    color: grey;
+    color: #808080;
 }
 
 .request-form input, .request-form textarea {
@@ -33,11 +31,10 @@ body {
 .request-form input[type="text"],
 .request-form input[type="tel"],
 .request-form textarea {
-    padding-left: 12px;
+    padding: 0 12px;
     border: none;
     height: 35px;
-
-    background: white;
+    background: #FFF;
     font-family: "Helvetica Neue", sans-serif;
     font-size: 14px;
 }
@@ -55,7 +52,7 @@ body {
 
 .request-form label {
     font-weight: bold;
-    color: rgb(103, 101, 102);
+    color: #676566;
 }
 
 .submit-button {
@@ -63,8 +60,8 @@ body {
     margin: 1em 0 0 auto;
     border: none;
 
-    background-color: rgb(61, 142, 173);
-    color: #FFFFFF;
+    background-color: #3d8ead;
+    color: #FFF;
 
     font-size: 14px;
     font-weight: bold;

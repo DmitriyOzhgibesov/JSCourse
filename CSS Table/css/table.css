@@ -2,15 +2,15 @@
     border: 1px solid lightgray;
     border-collapse: collapse;
     font-family: "Seravek", sans-serif;
-    width: 750px;
+    max-width:750px;
     font-size: 18px;
     text-align: left;
 }
 
 .employees-table th {
     border: 1px solid lightgray;
-    background-color: rgb(52, 152, 219);
-    color: #FFFFFF;
+    background-color: #3498DB;
+    color: #FFF;
 }
 
 .employees-table th, .employees-table td {
@@ -21,21 +21,21 @@
 }
 
 .employees-table tr:nth-child(odd) {
-    background-color: rgb(238, 238, 238);
+    background-color: #EEE;
 }
 
-.col-1 {
+.first-name-column {
     width: 150px;
 }
 
-.col-2 {
+.last-name-column {
     width: 152px;
 }
 
-.col-3 {
+.job-title-column {
     width: 270px;
 }
 
-.col-4 {
+.twitter-column {
     width: 175px;
 }

@@ -5,7 +5,7 @@ body {
 }
 
 .form {
-    background-color: rgb(254, 238, 215);
+    background-color: #feeed7;
     margin: 11px;
     max-width: 740px;
     padding: 7px 10px 0 9px;
@@ -38,7 +38,7 @@ body {
 }
 
 .text-blue {
-    color: rgb(61, 142, 173);
+    color: #3d8ead;
     font-weight: bold;
     display: inline;
     font-size: 18px;

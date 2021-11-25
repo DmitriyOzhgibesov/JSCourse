@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>"CSS TABLE" Task</title>
-    <link rel="stylesheet" type="text/css" href="src/reset.css">
-    <link rel="stylesheet" type="text/css" href="src/table.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/table.css">
 </head>
 <body>
 <table class="employees-table">
+    <colgroup>
+        <col class="first-name-column">
+        <col class="last-name-column">
+        <col class="job-title-column">
+        <col class="twitter-column">
+    </colgroup>
     <thead>
-    <col class="col-1">
-    <col class="col-2">
-    <col class="col-3">
-    <col class="col-4">
     <tr>
         <th>First Name</th>
         <th>Last Name</th>

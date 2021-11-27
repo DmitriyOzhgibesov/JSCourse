@@ -1,5 +1,5 @@
 (function () {
-    function sortArray(array) {
+    function sortDescending(array) {
         array.sort(function (a, b) {
             return b - a;
         });
@@ -36,7 +36,7 @@
     var array = [4, 2, 10, 3, 6, 7, 1];
     console.log("Initial array: " + array);
 
-    sortArray(array);
+    sortDescending(array);
     console.log("Array sorted in descending order: " + array);
 
     var first5Elements = getFirst5Elements(array);

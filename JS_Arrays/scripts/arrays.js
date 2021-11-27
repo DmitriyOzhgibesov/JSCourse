@@ -1,7 +1,7 @@
 (function () {
-    function getSortedArray(array) {
-        return array.sort(function (a, b) {
-            return b - a
+    function sortArray(array) {
+        array.sort(function (a, b) {
+            return b - a;
         });
     }
 
@@ -18,6 +18,7 @@
             if (element % 2 === 0) {
                 return sum + element;
             }
+
             return sum;
         }, 0);
     }
@@ -35,8 +36,8 @@
     var array = [4, 2, 10, 3, 6, 7, 1];
     console.log("Initial array: " + array);
 
-    var sortedArray = getSortedArray(array);
-    console.log("Array sorted in descending order: " + sortedArray)
+    sortArray(array);
+    console.log("Array sorted in descending order: " + array);
 
     var first5Elements = getFirst5Elements(array);
     console.log("First five elements in array: " + first5Elements);
@@ -57,7 +58,7 @@
         .map(function (value) {
             return Math.pow(value, 2);
         })
-        .forEach(function (evenSquareNumber) {
-            console.log(evenSquareNumber);
+        .forEach(function (evenNumberSquare) {
+            console.log(evenNumberSquare);
         });
 })();

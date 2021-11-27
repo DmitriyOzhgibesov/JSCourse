@@ -1,25 +1,26 @@
 (function () {
-    var countriesList = [{
-        name: "Russia",
-        cities: [
-            {
-                name: "Novosibirsk",
-                population: 1620162
-            },
-            {
-                name: "Perm",
-                population: 1049199
-            },
-            {
-                name: "Tomsk",
-                population: 568508
-            },
-            {
-                name: "Magadan",
-                population: 91797
-            }
-        ]
-    },
+    var countries = [
+        {
+            name: "Russia",
+            cities: [
+                {
+                    name: "Novosibirsk",
+                    population: 1620162
+                },
+                {
+                    name: "Perm",
+                    population: 1049199
+                },
+                {
+                    name: "Tomsk",
+                    population: 568508
+                },
+                {
+                    name: "Magadan",
+                    population: 91797
+                }
+            ]
+        },
         {
             name: "Espania",
             cities: [
@@ -57,12 +58,13 @@
                     population: 527725
                 }
             ]
-        }];
+        }
+    ];
 
     function getCountriesWithMaxCitiesQuantity(countries) {
         var maxCitiesQuantity = countries.reduce(function (maxCitiesQuantity, country) {
             if (country.cities.length > maxCitiesQuantity) {
-                maxCitiesQuantity = country.cities.length;
+                return maxCitiesQuantity + country.cities.length;
             }
 
             return maxCitiesQuantity;
@@ -71,29 +73,29 @@
         return countries.filter(function (country) {
             return country.cities.length === maxCitiesQuantity;
         }).map(function (country) {
-            return country.name;
+            return country;
         });
     }
 
-    function getSumPopulation(countries) {
-        var sumPopulation = {};
+    function getSumPopulations(countries) {
+        var sumPopulations = {};
 
         countries.forEach(function (country) {
-            sumPopulation[country.name] = country.cities.reduce(function (totalPopulation, city) {
+            sumPopulations[country.name] = country.cities.reduce(function (totalPopulation, city) {
                 return totalPopulation + city.population;
             }, 0);
         });
 
-        return sumPopulation;
+        return sumPopulations;
     }
 
-    console.log(countriesList);
+    console.log(countries);
 
-    var countriesWithMaxCitiesQuantity = getCountriesWithMaxCitiesQuantity(countriesList);
+    var countriesWithMaxCitiesQuantity = getCountriesWithMaxCitiesQuantity(countries);
     console.log("Countries with max cities quantity: ");
     console.log(countriesWithMaxCitiesQuantity);
 
-    var sumPopulation = getSumPopulation(countriesList);
+    var sumPopulations = getSumPopulations(countries);
     console.log("Countries in the format \"name - sum population\": ");
-    console.log(sumPopulation);
+    console.log(sumPopulations);
 })();

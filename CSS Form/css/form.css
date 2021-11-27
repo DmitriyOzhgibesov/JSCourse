@@ -4,7 +4,6 @@
 
 body {
     color: #676b7c;
-    max-width: 750px;
 }
 
 .request-form {
@@ -12,6 +11,7 @@ body {
     background-color: #feeed7;
     font-size: 14px;
     font-family: "Helvetica Neue", sans-serif;
+    max-width: 750px;
 }
 
 .request-header {
@@ -19,7 +19,7 @@ body {
     font-size: 28px;
     font-weight: unset;
     font-family: "Helvetica Neue", sans-serif;
-    color: #808080;
+    color: #676565;
 }
 
 .request-form input, .request-form textarea {
@@ -41,6 +41,7 @@ body {
 
 .request-form textarea {
     padding-top: 8px;
+    padding-bottom: 8px;
     height: 115px;
     font-family: "Arial", sans-serif;
     resize: vertical;

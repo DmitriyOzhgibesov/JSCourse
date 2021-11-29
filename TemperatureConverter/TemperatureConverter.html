@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script defer src="scripts/temperatureConverter.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/temperatureConverter.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+<h1 class="converter-header">Temperature converter</h1>
+<div class="input-block">
+    <label class="input-text"> Input Celsius degrees:
+        <input class="input-field" id="celsius" type="text" maxlength="10"> °C
+    </label>
+</div>
+<div class="convert-block">
+    <button class="conversion" id="conversion-button">CONVERT</button>
+</div>
+<div class="output-block">
+    <label class="output-text">
+        Output Fahrenheit degrees:
+        <input class="output-field" id="fahrenheit" type="text" disabled> F
+    </label>
+    <br/>
+    <label class="output-text">
+        Output Kelvin degrees:
+        <input class="output-field" id="kelvin" type="text" disabled> K
+    </label>
+</div>
+</body>
+</html>

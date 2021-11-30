@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+.list-title {
+    font-size: 25px;
+    padding: 15px 0;
+}
+
+.todo-list-item {
+    width: 500px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.input-field {
+    margin: 10px 10px;
+}
+
+.edit-button, .cancel-button, .save-button, .delete-item {
+    margin: 0 5px;
+    text-align: right;
+}

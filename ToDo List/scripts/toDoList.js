@@ -1,10 +1,10 @@
 (function () {
     "use strict";
 
-    var unorderedList;
+    var toDoList;
 
     function initPage() {
-        unorderedList = document.getElementById("notes");
+        toDoList = document.getElementById("notes");
 
         var additionButton = document.getElementById("add-button");
         additionButton.addEventListener("click", function () {
@@ -19,7 +19,7 @@
             listItem.classList.add("todo-list-item");
             listItem.textContent = inputDataValue;
 
-            unorderedList.appendChild(listItem);
+            toDoList.appendChild(listItem);
             inputField.value = "";
 
             addEditButton(listItem);
@@ -30,14 +30,14 @@
     function addDeleteButton(listItem) {
         var deleteButton = document.createElement("button");
         deleteButton.classList.add("delete-button");
-        deleteButton.innerHTML = "Delete Item";
+        deleteButton.textContent = "Delete Item";
         listItem.appendChild(deleteButton);
         deleteItem(deleteButton, listItem);
     }
 
     function deleteItem(deleteButton, listItem) {
         deleteButton.addEventListener("click", function () {
-            unorderedList.removeChild(listItem);
+            toDoList.removeChild(listItem);
         });
     }
 
@@ -63,14 +63,14 @@
 
             var saveButton = document.createElement("button");
             saveButton.classList.add("save-button");
-            saveButton.innerHTML = "Save changes";
+            saveButton.textContent = "Save changes";
 
             var cancelButton = document.createElement("button");
             cancelButton.classList.add("cancel-button");
-            cancelButton.innerHTML = "Cancel";
+            cancelButton.textContent = "Cancel";
 
-            unorderedList.removeChild(listItem);
-            unorderedList.appendChild(editableListItem);
+            toDoList.removeChild(listItem);
+            toDoList.appendChild(editableListItem);
             editableListItem.appendChild(inputField);
 
             editableListItem.appendChild(saveButton);
@@ -84,14 +84,19 @@
     function saveItem(saveButton, editableListItem, inputField) {
         saveButton.addEventListener("click", function () {
             var textInputField = inputField.value;
-            unorderedList.removeChild(editableListItem);
-            returnToInitialListItemState(textInputField);
+
+            if (textInputField === "") {
+                alert("Input field is empty! Try again...");
+            } else {
+                toDoList.removeChild(editableListItem);
+                returnToInitialListItemState(textInputField);
+            }
         });
     }
 
     function cancelAction(cancelButton, editableListItem, textList) {
         cancelButton.addEventListener("click", function () {
-            unorderedList.removeChild(editableListItem);
+            toDoList.removeChild(editableListItem);
             returnToInitialListItemState(textList);
         });
     }
@@ -100,7 +105,7 @@
         var listItem = document.createElement("li");
         listItem.classList.add("todo-list-item");
         listItem.textContent = text;
-        unorderedList.appendChild(listItem);
+        toDoList.appendChild(listItem);
         addEditButton(listItem);
         addDeleteButton(listItem);
     }

@@ -1,27 +1,21 @@
-(function () {
-    "use strict";
+"use strict";
 
-    function prepareDOM() {
-        var convertButton = document.getElementById("conversion-button");
+document.addEventListener("DOMContentLoaded", function () {
+    var celsiusInput = document.getElementById("celsius");
+    var convertButton = document.getElementById("conversion-button");
+    var fahrenheitOutput = document.getElementById("fahrenheit");
+    var kelvinOutput = document.getElementById("kelvin");
 
-        convertButton.addEventListener("click", function () {
-            var celsiusInput = document.getElementById("celsius");
-            var inputValue = Number(celsiusInput.value);
+    convertButton.addEventListener("click", function () {
+        var inputValue = celsiusInput.value;
 
-            if (isNaN(inputValue)) {
-                alert("Entered type is not a number! Try again.");
-
-                var inputSet = document.getElementsByClassName("output-field");
-
-                [].forEach.call(inputSet, function (inputElement) {
-                    inputElement.value = "";
-                });
-            } else {
-                document.getElementById("fahrenheit").value = inputValue * 1.8 + 32;
-                document.getElementById("kelvin").value = inputValue + 273.15;
-            }
-        });
-    }
-
-    document.addEventListener("DOMContentLoaded", prepareDOM);
-})();
+        if (inputValue === "") {
+            alert("Input field with temperature in Celsius degrees is empty! Try again.");
+        } else if (isNaN(Number(inputValue))) {
+            alert("Entered type is not a number! Try again.");
+        } else {
+            fahrenheitOutput.value = Number(inputValue) * 1.8 + 32;
+            kelvinOutput.value = Number(inputValue) + 273.15;
+        }
+    });
+});

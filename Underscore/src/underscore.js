@@ -41,7 +41,6 @@
 
     console.log("Average age of all persons: " + averageAge);
 
-//   • Получить список людей с возрастом от 20 до 30 включительно, отсортировать их по возрастанию возраста
     var ageFrom20To30 = _.chain(persons)
         .filter(function (person) {
             return person.age >= 20 && person.age <= 30;
@@ -63,7 +62,7 @@
 
     var uniqPeopleWithAgeFrom20To30 = _.uniq(peopleWithAgeFrom20To30, person => person.name).reverse();
 
-    console.log("Persons with uniq names and age from 20 to 30 (descending sort) : ");
+    console.log("Persons with uniq names and age from 20 to 30 (descending sort): ");
     _.each(uniqPeopleWithAgeFrom20To30, function (person) {
         console.log(_.pick(person, ["name", "lastName"]));
     });

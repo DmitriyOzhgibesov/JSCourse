@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+.list-title {
+    font-size: 40px;
+    font-family: Arial, Futura, serif;
+    text-align: center;
+    padding: 15px 0;
+    font-style: italic;
+    color: #FFF;
+    text-decoration: underline;
+    width: 500px;
+    background-color: #1E90FF;
+}
+
+.todo-list-item {
+    margin: 10px 0;
+    text-align: right;
+    padding: 5px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    background-color: #1E90FF;
+}
+
+.input-field {
+    margin: 10px 10px;
+}
+
+.edit-input {
+    border: 1px solid;
+}
+
+.action-button {
+    margin: 0 5px;
+    text-align: right;
+    background-color: #8A2BE2;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+.cancel-button, .delete-button {
+    margin: 0 5px;
+    text-align: right;
+    background-color: #FF0000;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+.edit-button, .save-button {
+    margin: 0 5px 0 25px;
+    text-align: right;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
+.create-item {
+    font-size: 16px;
+    font-family: Arial, Futura, serif;
+    text-align: center;
+    padding: 15px 0;
+    color: #FFF;
+    width: 500px;
+    background-color: #1E90FF;
+}
+
+.list-area {
+    font-size: 16px;
+    color: #FFF;
+    width: 500px;
+    background-color: #1E90FF;
+}
